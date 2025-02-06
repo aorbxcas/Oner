@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using QFramework;
-using UnityEngine.TextCore.Text;
-using System.Linq.Expressions;
 using UnityEngine.InputSystem;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 public class PlayerController : CharaController
 {
@@ -13,7 +11,8 @@ public class PlayerController : CharaController
     public InputAction moveAction;
     public InputAction attackAction;
     public InputAction TestAction;
-    private Vector2 moveValue;
+    public TextMeshProUGUI debugText; // 调试用Text，显示状态机信息
+
 
     private void OnEnable()
     {
@@ -43,6 +42,11 @@ public class PlayerController : CharaController
     }
     void Update()
     {
+        if (debugText != null&&mStateMachine.currentState != null)//  显示状态机信息
+        {
+            debugText.text = mStateMachine.currentState.GetType().ToString();
+        }
+        mStateMachine.Update();
         MoveInput(moveValue);
         LookAtMouse();
     }
@@ -53,7 +57,6 @@ public class PlayerController : CharaController
     private void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveValue = new Vector2(0,0);
-        this.SendCommand(new CharacterAnimationCommand(this, CharacterAnimationType.Idle));
     }
     private void OnAttackPerformed(InputAction.CallbackContext context)
     {
@@ -67,13 +70,24 @@ public class PlayerController : CharaController
 
     protected override void MoveInput(Vector2 direction)
     {
-        this.SendCommand(new CharacterActionCommand(this, new ChacterActionParams { ActionType = CharacterActionType.Move, direction = direction }));
+        if (isActionPlaying == true) return;
+        if (Math.Abs(direction.x) < 0.01 && Math.Abs(direction.y) < 0.01)
+        {
+            mStateMachine.ChangeState(new IdleState(this));
+        }
+        else
+        {
+            mStateMachine.ChangeState(new MoveState(this,direction));
+        }
     }
-
+    
     protected override void AttackInput()
     {
-
-        this.SendCommand(new CharacterActionCommand(this, new ChacterActionParams { ActionType = CharacterActionType.Attack }));
+        if (mWeapon != null)
+        {
+            isActionPlaying = true;
+            mStateMachine.ChangeState(new AttackState(this));
+        }
     }
     private void LookAtMouse()
     {

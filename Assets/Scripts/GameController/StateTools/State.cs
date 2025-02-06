@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
 
-public abstract class State
+public abstract class State : IController
 {
     protected CharaController characterController;
     public State(CharaController characterController)
@@ -12,4 +13,9 @@ public abstract class State
     public abstract void Enter();
     public abstract void Execute();
     public abstract void Exit();
+
+    public IArchitecture GetArchitecture()
+    {
+        return Oner.Interface;
+    }
 }

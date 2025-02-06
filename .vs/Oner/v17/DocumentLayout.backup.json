@@ -3,20 +3,64 @@
   "WorkspaceRootPath": "D:\\DevProject\\UnityPro\\Oner\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|d:\\devproject\\unitypro\\oner\\assets\\scripts\\gamecontroller\\statetools\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|d:\\devproject\\unitypro\\oner\\assets\\scripts\\gamecontroller\\statetools\\characterstate\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\statetools\\characterstate\\attackstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\statetools\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\statetools\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|d:\\devproject\\unitypro\\oner\\assets\\scripts\\gamecontroller\\statetools\\characterstate\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\statetools\\characterstate\\idlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|d:\\devproject\\unitypro\\oner\\assets\\scripts\\gamecontroller\\statetools\\characterstate\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\statetools\\characterstate\\movestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\events\\animationevent\\playerstatebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\events\\animationevent\\playerstatebehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\commands\\characteractioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\commands\\characteractioncommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\characontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\characontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\statetools\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\statetools\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamecontroller\\weapons\\closeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamecontroller\\weapons\\closeweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\architecture\\oner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\architecture\\oner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gamedata\\character\\characterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamedata\\character\\characterinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gametools\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gametools\\cameramovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|D:\\DevProject\\UnityPro\\Oner\\assets\\scripts\\gametools\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{736DA9CC-8BF5-96C2-4C25-FDC0AA492AC9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gametools\\collectionhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,40 +70,117 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AttackState.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\AttackState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\AttackState.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\AttackState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\AttackState.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIBBwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:29:09.051Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "IdleState.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\IdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\IdleState.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\IdleState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\IdleState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:27:43.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MoveState.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\MoveState.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\MoveState.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\CharacterState\\MoveState.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\StateTools\\CharacterState\\MoveState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T08:27:16.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerStateBehavior.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Events\\AnimationEvent\\PlayerStateBehavior.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Events\\AnimationEvent\\PlayerStateBehavior.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Events\\AnimationEvent\\PlayerStateBehavior.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Events\\AnimationEvent\\PlayerStateBehavior.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T07:59:42.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "State.cs",
               "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\State.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\StateTools\\State.cs",
               "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\State.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameController\\StateTools\\State.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAhAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T03:42:16.709Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CharacterActionCommand.cs",
-              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
-              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "CharaController.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\CharaController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\CharaController.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\CharaController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\CharaController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-05T03:39:09.433Z"
+              "WhenOpened": "2025-02-05T06:05:45.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\PlayerController.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\PlayerController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAIAywFYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T06:00:08.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\EnemyController.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\EnemyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T06:00:07.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "CloseWeapon.cs",
               "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\Weapons\\CloseWeapon.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\Weapons\\CloseWeapon.cs",
@@ -71,7 +192,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "CharacterActionCommand.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Commands\\CharacterActionCommand.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwBkAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T03:39:09.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StateMachine.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\StateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameController\\StateTools\\StateMachine.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameController\\StateTools\\StateMachine.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameController\\StateTools\\StateMachine.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T03:46:46.301Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d375ef0d-9946-4920-bae8-e432ebc42c55}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Oner.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Architecture\\Oner.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Architecture\\Oner.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\Architecture\\Oner.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Architecture\\Oner.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T02:00:52.585Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CharacterInfo.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameData\\Character\\CharacterInfo.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameData\\Character\\CharacterInfo.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameData\\Character\\CharacterInfo.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameData\\Character\\CharacterInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-06T01:54:51.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "CameraMovement.cs",
               "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameTools\\CameraMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameTools\\CameraMovement.cs",
@@ -80,6 +253,18 @@
               "ViewState": "AgIAACAAAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-22T15:30:36.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CollectionHelper.cs",
+              "DocumentMoniker": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameTools\\CollectionHelper.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameTools\\CollectionHelper.cs",
+              "ToolTip": "D:\\DevProject\\UnityPro\\Oner\\Assets\\Scripts\\GameTools\\CollectionHelper.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameTools\\CollectionHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-05T06:31:34.625Z"
             }
           ]
         }

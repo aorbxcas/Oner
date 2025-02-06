@@ -70,9 +70,11 @@
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\Game\GameMainMineCell.Designer.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\MoveState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\Main.cs" />
     <Compile Include="Assets\Scripts\GameData\Character\CharacterInfo.cs" />
+    <Compile Include="Assets\Scripts\Events\AnimationEvent\PlayerStateBehavior.cs" />
     <Compile Include="Assets\Scripts\Commands\CharacterAnimationCommand.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
@@ -84,7 +86,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\GameEvent.cs" />
-    <Compile Include="Assets\Scripts\GameController\StateTools\PlayerStates.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\SectorAttackSelector.cs" />
     <Compile Include="Assets\Scripts\Architecture\Oner.cs" />
@@ -112,6 +113,7 @@
     <Compile Include="Assets\Scripts\GameTools\CollectionHelper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\IdleState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\Scripts\GameController\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameData\Character\EnemyInfo.cs" />
@@ -121,6 +123,7 @@
     <Compile Include="Assets\Scripts\GameController\EnemyController.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\StateMachine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\AttackState.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\CircleAttackSelector.cs" />
     <Compile Include="Assets\QFramework\Exam\call.cs" />
     <Compile Include="Assets\Scripts\Commands\CharacterActionCommand.cs" />

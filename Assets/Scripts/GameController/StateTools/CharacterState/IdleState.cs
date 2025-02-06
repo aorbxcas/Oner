@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using QFramework;
 
 public class IdleState : State
 {
@@ -10,16 +11,16 @@ public class IdleState : State
 
     public override void Enter()
     {
-        Debug.Log("Entering Idle State");
+        //this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Idle }));
+
     }
 
     public override void Execute()
     {
-        Debug.Log("Idle State Executing");
+        this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Idle }));
     }
 
     public override void Exit()
     {
-        Debug.Log("Exiting Idle State");
     }
 }

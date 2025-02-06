@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class StateMachine
 {
-    private State currentState;
+    public State currentState;
     public void ChangeState(State newState)
     {
         if (currentState != null)
         {
+            //if (currentState.GetType() == newState.GetType()) return;
             currentState.Exit();
         }
         currentState = newState;

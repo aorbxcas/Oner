@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public enum CharacterActionType 
 {
+    Idle,
     Move,
     Attack,
     OnDamage,
@@ -24,6 +25,9 @@ public abstract class CharaController : MonoBehaviour,IController
     public CharacterInfo mCharacterInfo;
     public WeaponController mWeapon;
     public Animator mAnimator;
+    public StateMachine mStateMachine;
+    protected Vector2 moveValue;
+    public bool isActionPlaying = false;
 
 
     public IArchitecture GetArchitecture()
@@ -42,13 +46,16 @@ public abstract class CharaController : MonoBehaviour,IController
             gameObject.AddComponent<CharacterInfo>();
             mCharacterInfo = GetComponent<CharacterInfo>();
         }
+
+        mStateMachine = new StateMachine();
+
         mAnimator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
     protected abstract void MoveInput(Vector2 direction);
     protected abstract void AttackInput();
@@ -87,4 +94,5 @@ public abstract class CharaController : MonoBehaviour,IController
             mCharacterInfo.currentAnimation = AnimName;
         }
     }
+
 }
