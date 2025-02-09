@@ -1,1 +1,7 @@
 开发日志
+2025.2.5：第一次提交，项目选用QFramework架构，引入了地图、角色模型（动作动画）等资源，实现了角色、武器和相机基本脚本。
+角色CharaController父类，EnemyController与PlayerController子类，父类包含PlayAnimation函数和角色基本行为（待机，移动，攻击等）虚函数，子类PlayerController利用InputSystem实现了输入指令抓取并利用Command实现了基本的移动、转向、攻击等操作并利用Animator播放相应动画。角色基本数据存于CharacterInfo类中可在编辑器中自由调节。
+武器Weapon类实现了基本的攻击函数，武器分类为近战伤害、子弹生成以及魔法三类并实现了不同形状的可调节参数的目标选择器类用于武器抓取攻击目标。武器数据存于WeaponInfo类中可在编辑器中调节。
+实现了状态机基类，待后续引入角色状态管理。
+
+2025.2.7：完善了状态机，并引入Player中进行角色状态管理，利用Command实现了基本状态行为，引入了StateBehaviour监视动画结束状态以便角色状态调整。
