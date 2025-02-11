@@ -32,6 +32,12 @@ public class CharacterAnimationCommand : AbstractCommand
             case CharacterAnimationType.OnDamage:
                 character.PlayAnimation("OnDamage");
                 break;
+            case CharacterAnimationType.Defend:
+                character.PlayAnimation("Defend", AnimationTimes.During);
+                break;
+            case CharacterAnimationType.OnDefendDamage:
+                character.PlayAnimation("OnDefendDamage");
+                break;
             default:
                 break;
         }

@@ -20,6 +20,8 @@ public class CharacterInfo:MonoBehaviour
     /// <summary>ÒÆ¶¯ËÙ¶È </summary>
     public int moveSpeed = 5;
 
+    public float defendRatio = 0.8f;
+
     public float rotationSpeed = 8.0f;
 
     public string currentAnimation = "Idle";

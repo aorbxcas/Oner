@@ -11,6 +11,7 @@ public class AttackState : State
 
     public override void Enter()
     {
+        characterController.isActionPlaying = true;
         this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Attack }));
     }
 

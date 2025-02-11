@@ -11,7 +11,11 @@ public class PlayerController : CharaController
     public InputAction moveAction;
     public InputAction attackAction;
     public InputAction TestAction;
+    public InputAction DefendAction;
+
+
     public TextMeshProUGUI debugText; // 调试用Text，显示状态机信息
+    public GameObject testWeapon;
 
 
     private void OnEnable()
@@ -23,6 +27,10 @@ public class PlayerController : CharaController
         attackAction.performed += OnAttackPerformed;
         TestAction.Enable();
         TestAction.performed += OnTestPerformed;
+        DefendAction.Enable();
+        DefendAction.started += OnDefendStarted;
+        DefendAction.canceled += OnDefendCanceled;
+
     }
     private void OnDisable()
     {
@@ -33,6 +41,9 @@ public class PlayerController : CharaController
         attackAction.Disable();
         TestAction.performed -= OnTestPerformed;
         TestAction.Disable();
+        DefendAction.started -= OnDefendStarted;
+        DefendAction.canceled -= OnDefendCanceled;
+        DefendAction.Disable();
 
     }
 
@@ -65,15 +76,28 @@ public class PlayerController : CharaController
     private void OnTestPerformed(InputAction.CallbackContext context)
     {
         //  测试用
-        this.SendCommand(new CharacterActionCommand(this, new ChacterActionParams { ActionType = CharacterActionType.OnDamage, damage = 10 }));
+        //this.SendCommand(new CharacterActionCommand(this, new ChacterActionParams { ActionType = CharacterActionType.OnDamage, damage = 10 }));
+        testWeapon.GetComponent<WeaponController>().Attack();
+    }
+    private void OnDefendStarted(InputAction.CallbackContext context)
+    {
+        DefendInput();
+    }
+    private void OnDefendCanceled(InputAction.CallbackContext context)
+    {
+        IdleInput();
     }
 
+    protected override void IdleInput()
+    {
+        mStateMachine.ChangeState(new IdleState(this));
+    }
     protected override void MoveInput(Vector2 direction)
     {
         if (isActionPlaying == true) return;
         if (Math.Abs(direction.x) < 0.01 && Math.Abs(direction.y) < 0.01)
         {
-            mStateMachine.ChangeState(new IdleState(this));
+            IdleInput();
         }
         else
         {
@@ -83,12 +107,20 @@ public class PlayerController : CharaController
     
     protected override void AttackInput()
     {
+        if (isActionPlaying == true) return;
         if (mWeapon != null)
         {
-            isActionPlaying = true;
             mStateMachine.ChangeState(new AttackState(this));
         }
     }
+    
+    protected override void DefendInput()
+    {
+        if (isActionPlaying == true) return;
+        mStateMachine.ChangeState(new DefendState(this));
+    }
+
+    
     private void LookAtMouse()
     {
         // 用屏幕坐标系计算角色面向

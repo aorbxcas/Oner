@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\GameData\Character\PlayerInfo.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\OnHitState.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameStartUIPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
@@ -88,6 +89,7 @@
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\GameEvent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\SectorAttackSelector.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\DeathState.cs" />
     <Compile Include="Assets\Scripts\Architecture\Oner.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameEndUIPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -110,6 +112,7 @@
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameMainUIPanel.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\base\IAttackSelector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\DefendState.cs" />
     <Compile Include="Assets\Scripts\GameTools\CollectionHelper.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
@@ -122,6 +125,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameController\EnemyController.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\OnDefendHitState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\AttackState.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\CircleAttackSelector.cs" />

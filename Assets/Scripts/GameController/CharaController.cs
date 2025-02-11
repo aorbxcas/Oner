@@ -10,7 +10,8 @@ public enum CharacterActionType
     Move,
     Attack,
     OnDamage,
-    Test
+    Test,
+    Defend
 }
 public enum CharacterAnimationType
 {
@@ -18,9 +19,11 @@ public enum CharacterAnimationType
     Run,
     Attack,
     OnDamage,
+    Defend,
+    OnDefendDamage
 }
 
-public abstract class CharaController : MonoBehaviour,IController
+public abstract class CharaController : MonoBehaviour, IController
 {
     public CharacterInfo mCharacterInfo;
     public WeaponController mWeapon;
@@ -28,6 +31,7 @@ public abstract class CharaController : MonoBehaviour,IController
     public StateMachine mStateMachine;
     protected Vector2 moveValue;
     public bool isActionPlaying = false;
+    public bool isDefending = false;
 
 
     public IArchitecture GetArchitecture()
@@ -57,20 +61,16 @@ public abstract class CharaController : MonoBehaviour,IController
     {
 
     }
+    protected abstract void IdleInput();
     protected abstract void MoveInput(Vector2 direction);
     protected abstract void AttackInput();
 
+    protected abstract void DefendInput();
+
     public void OnCharacterDamage(int damage)
     {
-        Debug.Log("hurt");
-        if (mCharacterInfo.HP > damage)
-        {
-            mCharacterInfo.HP -= damage;
-        }
-        else
-        {
-            mCharacterInfo.HP = 0;
-        }
+        if(isDefending) mStateMachine.ChangeState(new OnDefendHitState(this,damage));
+        else mStateMachine.ChangeState(new OnHitState(this,damage));
     }
     protected void Die()
     {
@@ -94,5 +94,12 @@ public abstract class CharaController : MonoBehaviour,IController
             mCharacterInfo.currentAnimation = AnimName;
         }
     }
-
+    public void SetDefendBool(bool value)
+    {
+        isDefending = value;
+    }
+    public bool GetDefendBool()
+    {
+        return isDefending; 
+    }
 }

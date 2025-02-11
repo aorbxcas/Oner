@@ -17,7 +17,7 @@ public class MoveState : State
 
     public override void Execute()
     {
-        this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Move, direction = direction }));
+        this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Move, direction = direction } ));
     }
 
     public override void Exit()

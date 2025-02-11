@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class EnemyController : CharaController
 {
+    protected override void IdleInput()
+    {
+        
+    }
     protected override void AttackInput()
     {
         
@@ -13,7 +17,10 @@ public class EnemyController : CharaController
     {
 
     }
-
+    protected override void DefendInput()
+    {
+        
+    }
 
     // Start is called before the first frame update
     protected override void Start()
