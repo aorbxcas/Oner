@@ -1,0 +1,255 @@
+Using pre-set license
+Built from '2022.3/china_unity/release' branch; Version is '2022.3.43f1c1 (7a2282349f6f) revision 8004226'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.26100) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 15578 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\DevDownload\Unity\2022.3.15f1c1\2022.3.43f1c1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker25
+-projectPath
+D:/DevProject/UnityPro/Oner
+-logFile
+Logs/AssetImportWorker25.log
+-srvPort
+55897
+Successfully changed project path to: D:/DevProject/UnityPro/Oner
+D:/DevProject/UnityPro/Oner
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [58912]  Target information:
+
+Player connection [58912]  * "[IP] 26.212.216.48 [Port] 0 [Flags] 2 [Guid] 3634352949 [EditorId] 3634352949 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-5P5FO6PS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [58912]  * "[IP] 192.168.31.149 [Port] 0 [Flags] 2 [Guid] 3634352949 [EditorId] 3634352949 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-5P5FO6PS) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+
+Player connection [58912] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [58912] Host joined alternative multi-casting on [225.0.0.222:34997]...
+[PhysX] Initialized MultithreadedTaskDispatcher with 32 workers.
+Refreshing native plugins compatible for Editor in 23.51 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.43f1c1 (7a2282349f6f)
+[Subsystems] Discovering subsystems at path D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/DevProject/UnityPro/Oner/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 4060 Laptop GPU (ID=0x28e0)
+    Vendor:   NVIDIA
+    VRAM:     7957 MB
+    Driver:   32.0.15.6607
+Initialize mono
+Mono path[0] = 'D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/Managed'
+Mono path[1] = 'D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56984
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.011976 seconds.
+- Loaded All Assemblies, in  0.302 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.183 seconds
+Domain Reload Profiling: 479ms
+	BeginReloadAssembly (112ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (95ms)
+		LoadAssemblies (106ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (93ms)
+			TypeCache.Refresh (92ms)
+				TypeCache.ScanAssembly (82ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (183ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (153ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (1ms)
+			ProcessInitializeOnLoadAttributes (102ms)
+			ProcessInitializeOnLoadMethodAttributes (37ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.582 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.636 seconds
+Domain Reload Profiling: 1208ms
+	BeginReloadAssembly (142ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (19ms)
+	RebuildCommonClasses (22ms)
+	RebuildNativeTypeToScriptingClass (7ms)
+	initialDomainReloadingComplete (39ms)
+	LoadAllAssembliesAndSetupDomain (363ms)
+		LoadAssemblies (309ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (144ms)
+			TypeCache.Refresh (124ms)
+				TypeCache.ScanAssembly (112ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (636ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (531ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (416ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (15ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.08 seconds
+Refreshing native plugins compatible for Editor in 7.07 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4387 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (55.3 KB). Loaded Objects now: 4872.
+Memory consumption went from 166.0 MB to 166.0 MB.
+Total: 3.460100 ms (FindLiveObjects: 0.303500 ms CreateObjectMapping: 0.115800 ms MarkObjects: 2.944700 ms  DeleteObjects: 0.095500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:scripting/monoscript/fileName/CollectionExtensions.cs: 0de5114dee9bfae7ea55bdae3b0d3f88 -> 
+  custom:scripting/monoscript/fileName/InstantActionHandler.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/SuperCollision.cs: 888157d9df4545f7800783f094c8c273 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:scripting/monoscript/fileName/SuperCollider.cs: 99910f23e5fc6aa7cb8573052d1f7ac2 -> 
+  custom:scripting/monoscript/fileName/DoubleJump.cs: 1359eef64a007879a547317eae1a0c5e -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:scripting/monoscript/fileName/Move.cs: d8175e2c75b2b923250429092ef43a85 -> 
+  custom:scripting/monoscript/fileName/PlayerCamera.cs: b178b271084040bd12f005109094346b -> 
+  custom:scripting/monoscript/fileName/BSPTree.cs: 1bae6001f694de2f5bc94cbd9e2a5409 -> 
+  custom:scripting/monoscript/fileName/SimpleActionHandler.cs: f7b533ad27e58628d9076fee28b5313c -> 
+  custom:scripting/monoscript/fileName/SwitchWeapon.cs: 2bae5128e5825220242b156a43b3d4db -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:scripting/monoscript/fileName/Fall.cs: 2fbde0244551afae75210bd5a85644fb -> 
+  custom:scripting/monoscript/fileName/ControllerExtensions.cs: 1e90de09a65e90cbe09dcad7ffafd87c -> 
+  custom:scripting/monoscript/fileName/AnimationVariations.cs: cb5eb6af831ebb964b748f6ade70b3ff -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:scripting/monoscript/fileName/SuperMath.cs: 6f17478ba9a5bad6ed134557c2fdee93 -> 
+  custom:scripting/monoscript/fileName/IKHands.cs: a501caec83417fa61aa2095fce356c86 -> 
+  custom:scripting/monoscript/fileName/RPGCharacterMovementController.cs: 68ef00d712878323b594ca07cd67cfd8 -> 
+  custom:scripting/monoscript/fileName/SuperCollisionType.cs: fd7cfc42910077f94e90621986d7763c -> 
+  custom:scripting/monoscript/fileName/SuperGround.cs: 849ed7f5b11c9db237ef61b01c5a5104 -> 
+  custom:scripting/monoscript/fileName/BaseActionHandler.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/SuperStateMachine.cs: 8232af25ee187bdf8f5018c5dd028a4e -> 
+  custom:scripting/monoscript/fileName/Idle.cs: 16ed73764a73aaa8d71608a762b31fa2 -> 
+  custom:scripting/monoscript/fileName/PlayerInputController.cs: 53f9c62b24fb368da1ff2c4d4f52d193 -> 
+  custom:scripting/monoscript/fileName/GUIControls.cs: 95b4841842ce692c364e0aac4c455c60 -> 
+  custom:scripting/monoscript/fileName/Math3d.cs: 816ad95c73e4c3d25076a82af67658a1 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:scripting/monoscript/fileName/PlayerMachine.cs: 038ad5037ea9a493e9e5c17d24cc2e2d -> 
+  custom:scripting/monoscript/fileName/RPGCharacterController.cs: 50ec91c04939167c23373ca9ea694e72 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/NPC.cs: 4f3098839750b4e4dc501680980028ee -> 
+  custom:scripting/monoscript/fileName/AnimationData.cs: 158842959f7e68a674ee203ab7d7a2b8 -> 
+  custom:scripting/monoscript/fileName/RPGCharacterAnimatorEvents.cs: 54a9ca300583e734c3b4e545096070ba -> 
+  custom:scripting/monoscript/fileName/IgnoredCollider.cs: 0cdf409b5aa8d4c25876d72b5c6a3b60 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:scripting/monoscript/fileName/AttackContext.cs: ecee8e069bd418bc4a97a67ed1a0ad33 -> 
+  custom:scripting/monoscript/fileName/ActionHandler.cs: a3298048acccfde4e59a926f87bfad30 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:scripting/monoscript/fileName/SetupInputLayers.cs: 389979534e379616ab9ca67b9498efac -> 
+  custom:scripting/monoscript/fileName/AnimatorExtensions.cs: 72af1547ce7dae6261d30fb7becdaf12 -> 
+  custom:scripting/monoscript/fileName/SlowTime.cs: 02b6e1a35e1d76a4ad29cf0e44eb6bf4 -> 
+  custom:scripting/monoscript/fileName/WeaponExtensions.cs: dd941b82ef883000eea18e3038372a1c -> 
+  custom:scripting/monoscript/fileName/EmptyContext.cs: 561fcfa0f80ef1a5777a9e88304c0e27 -> 
+  custom:scripting/monoscript/fileName/Attack.cs: 91676e546567efff93d659a89c04882d -> 
+  custom:scripting/monoscript/fileName/RPGCharacterNavigationController.cs: 77ed352f12608ac655897c8c0667a5c4 -> 
+  custom:scripting/monoscript/fileName/DebugDraw.cs: 3a58a8dfbcd33809a50925ddcfb20b7d -> 
+  custom:scripting/monoscript/fileName/CameraController.cs: 0a4c3fbe4ddbb8f8a43c9f9694752b4c -> 34b6be4e23ce86dc89786916c5983296
+  custom:scripting/monoscript/fileName/Null.cs: 8182a3ed9f9c671f1b85d7a32d25e05c -> f21d09af01a1562156a2b42c414d9b4f
+  custom:scripting/monoscript/fileName/SimpleStateMachine.cs: 3194d9edd59c29e6434b5869f1ce3a54 -> 
+  custom:scripting/monoscript/fileName/GetHit.cs: 95887d6992e749ac2c6dffda80de644a -> 
+  custom:scripting/monoscript/fileName/Navigation.cs: 341b51b7373dc1370e69423fa937406b -> e35012b3e8f0b9a62e22595c530c4b09
+  custom:scripting/monoscript/fileName/Knockback.cs: 7b57ca427ed603ab9f942d8d57f0a620 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/CoroutineQueue.cs: 44a89a32fa8b8f22e820453622d0fe02 -> 
+  custom:scripting/monoscript/fileName/RPGCharacterInputController.cs: 7bfc908f1d6a8f28410f86e4632e3231 -> 
+  custom:scripting/monoscript/fileName/HitContext.cs: 94ecfcdb6fc0f07a50e97347de409486 -> 
+  custom:scripting/monoscript/fileName/Knockdown.cs: 2fae05cc518297600a3c3b25d85f7720 -> 
+  custom:scripting/monoscript/fileName/AnimationParameters.cs: c973e7ae104d9cfe8e3606552f276370 -> 
+  custom:scripting/monoscript/fileName/RPGCharacterWeaponController.cs: f23903171406079cc2f01f8424504567 -> 
+  custom:scripting/monoscript/fileName/DiveRoll.cs: 85055367cb7f61c5a97473c7ea0f7a45 -> 
+  custom:scripting/monoscript/fileName/PlayerMachineDebug.cs: aaae341fc7774b17addcf81fd1992cd9 -> 
+  custom:scripting/monoscript/fileName/HandlerTypes.cs: d8cfc6f27699c40e3ddbd348e668b8e9 -> 
+  custom:scripting/monoscript/fileName/Gravity.cs: c53d682c0ba4f81e5f85146f4c20e65e -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:scripting/monoscript/fileName/WeaponGroupings.cs: 3826a29d8d0ad8fd3cec751efa880b0e -> 
+  custom:scripting/monoscript/fileName/MovementActionHandler.cs: 90647cc400823b41df847a6cbfc29026 -> 
+  custom:scripting/monoscript/fileName/Jump.cs: f6a1a7a11fc6f7a59c929d3586483941 -> 
+  custom:scripting/monoscript/fileName/HighJumpTrampoline.cs: 326e11537f2b54fa693aa421ad83b435 -> 
+  custom:scripting/monoscript/fileName/NoJumpSlime.cs: 26149c261b8a609b3dfef63833079b0e -> 
+  custom:scripting/monoscript/fileName/CollisionSphere.cs: f0073fcad95df0546316d67fb73ddfdf -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: 由于线程退出或应用程序请求，已中止 I/O 操作。
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

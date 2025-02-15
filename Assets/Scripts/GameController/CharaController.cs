@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using QFramework;
 using UnityEngine.InputSystem;
+using System;
 
 public enum CharacterActionType 
 {
@@ -11,7 +12,8 @@ public enum CharacterActionType
     Attack,
     OnDamage,
     Test,
-    Defend
+    Defend,
+    Roll
 }
 public enum CharacterAnimationType
 {
@@ -20,7 +22,8 @@ public enum CharacterAnimationType
     Attack,
     OnDamage,
     Defend,
-    OnDefendDamage
+    OnDefendDamage,
+    Roll
 }
 
 public abstract class CharaController : MonoBehaviour, IController
@@ -32,6 +35,7 @@ public abstract class CharaController : MonoBehaviour, IController
     protected Vector2 moveValue;
     public bool isActionPlaying = false;
     public bool isDefending = false;
+    public bool isRolling = false;
 
 
     public IArchitecture GetArchitecture()
@@ -69,6 +73,10 @@ public abstract class CharaController : MonoBehaviour, IController
 
     public void OnCharacterDamage(int damage)
     {
+        if (isRolling) {
+            Debug.Log("…¡±‹≥…π¶");
+            return;
+        }
         if(isDefending) mStateMachine.ChangeState(new OnDefendHitState(this,damage));
         else mStateMachine.ChangeState(new OnHitState(this,damage));
     }
@@ -101,5 +109,13 @@ public abstract class CharaController : MonoBehaviour, IController
     public bool GetDefendBool()
     {
         return isDefending; 
+    }
+    public void SetRollBool(bool value)
+    {
+        isRolling = value;
+    }
+    public bool GetRollBool()
+    {
+        return isRolling;
     }
 }

@@ -8,6 +8,8 @@ public class Oner : Architecture<Oner>
 {
     protected override void Init()
     {
-        
+        this.RegisterModel(new PlayerDataModel());
+
+        this.RegisterSystem(new GameStateSystem());
     }
 }

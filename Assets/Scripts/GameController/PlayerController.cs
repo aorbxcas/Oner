@@ -12,6 +12,7 @@ public class PlayerController : CharaController
     public InputAction attackAction;
     public InputAction TestAction;
     public InputAction DefendAction;
+    public InputAction RollAction;
 
 
     public TextMeshProUGUI debugText; // 调试用Text，显示状态机信息
@@ -30,6 +31,8 @@ public class PlayerController : CharaController
         DefendAction.Enable();
         DefendAction.started += OnDefendStarted;
         DefendAction.canceled += OnDefendCanceled;
+        RollAction.Enable();
+        RollAction.started += OnRollStarted;
 
     }
     private void OnDisable()
@@ -44,6 +47,8 @@ public class PlayerController : CharaController
         DefendAction.started -= OnDefendStarted;
         DefendAction.canceled -= OnDefendCanceled;
         DefendAction.Disable();
+        RollAction.started -= OnRollStarted;
+        RollAction.Disable();
 
     }
 
@@ -88,6 +93,11 @@ public class PlayerController : CharaController
         IdleInput();
     }
 
+    private void OnRollStarted(InputAction.CallbackContext context)
+    {
+        RollInput();
+    }
+
     protected override void IdleInput()
     {
         mStateMachine.ChangeState(new IdleState(this));
@@ -120,10 +130,17 @@ public class PlayerController : CharaController
         mStateMachine.ChangeState(new DefendState(this));
     }
 
+    private void RollInput()
+    {
+        if (isActionPlaying == true) return;
+        mStateMachine.ChangeState(new RollState(this,moveValue));
+    }
+
     
     private void LookAtMouse()
     {
         // 用屏幕坐标系计算角色面向
+        if (isActionPlaying == true) return;
         Vector3 direction3D = (Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position)).normalized;
         Vector2 direction2D = new Vector2(direction3D.x, direction3D.y);
         float angle = -Vector2.SignedAngle(Vector2.up, direction2D);

@@ -96,12 +96,15 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
+    <Compile Include="Assets\Scripts\System\GameStateSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\GameData\WeaponInfo.cs" />
     <Compile Include="Assets\Scripts\GameTools\TransformHelper.cs" />
+    <Compile Include="Assets\DoubleL\Demo\DemoCameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\UI\Player\PlayerUIManager.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameMainUIPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\GameTools\CameraMovement.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
@@ -121,15 +124,18 @@
     <Compile Include="Assets\Scripts\GameController\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameData\Character\EnemyInfo.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameStartUIPanel.Designer.cs" />
+    <Compile Include="Assets\Scripts\Models\PlayerDataModel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameController\EnemyController.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\Tools\InfoTools.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\OnDefendHitState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\AttackState.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\CircleAttackSelector.cs" />
     <Compile Include="Assets\QFramework\Exam\call.cs" />
+    <Compile Include="Assets\Scripts\GameController\StateTools\CharacterState\RollState.cs" />
     <Compile Include="Assets\Scripts\Commands\CharacterActionCommand.cs" />
     <Compile Include="Assets\Scripts\GameController\CharaController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -138,6 +144,7 @@
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\shaders\TestShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />

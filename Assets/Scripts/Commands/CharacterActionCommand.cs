@@ -29,20 +29,20 @@ public class CharacterActionCommand : AbstractCommand
                 character.GetComponent<CharacterController>().Move(moveDirection * character.mCharacterInfo.moveSpeed * Time.deltaTime);
                 break;
             case CharacterActionType.Attack:
-                //character.isActionPlaying = true;
                 character.mWeapon.GetComponent<WeaponController>().Attack();
                 this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.Attack));
                 break;
             case CharacterActionType.OnDamage:
-                //character.isActionPlaying = true;
                 character.GetComponent<CharaController>().OnCharacterDamage(param.damage);
                 // this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.OnDamage));
                 break;
             case CharacterActionType.Defend:
-                //character.isActionPlaying = true;
                 character.GetComponent<CharaController>().SetDefendBool(true);
                 this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.Defend));
-
+                break;
+            case CharacterActionType.Roll:
+                character.GetComponent<CharaController>().SetRollBool(true);
+                this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.Roll));
                 break;
             default:
                 break;
