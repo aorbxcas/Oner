@@ -42,10 +42,6 @@ public abstract class CharaController : MonoBehaviour, IController
     {
         return Oner.Interface;
     }
-    void Awake()
-    {
-
-    }
     protected virtual void Start()
     {
         mCharacterInfo = GetComponent<CharacterInfo>();
@@ -65,11 +61,43 @@ public abstract class CharaController : MonoBehaviour, IController
     {
 
     }
-    protected abstract void IdleInput();
-    protected abstract void MoveInput(Vector2 direction);
-    protected abstract void AttackInput();
+    public void IdleInput()
+    {
+        mStateMachine.ChangeState(new IdleState(this));
+    }
+    public void MoveInput(Vector2 direction)
+    {
+        if (isActionPlaying == true) return;
+        if (Math.Abs(direction.x) < 0.01 && Math.Abs(direction.y) < 0.01)
+        {
+            IdleInput();
+        }
+        else
+        {
+            mStateMachine.ChangeState(new MoveState(this, direction));
+        }
+    }
 
-    protected abstract void DefendInput();
+    public void AttackInput()
+    {
+        if (isActionPlaying == true) return;
+        if (mWeapon != null)
+        {
+            mStateMachine.ChangeState(new AttackState(this));
+        }
+    }
+
+    public void DefendInput()
+    {
+        if (isActionPlaying == true) return;
+        mStateMachine.ChangeState(new DefendState(this));
+    }
+
+    public void RollInput()
+    {
+        if (isActionPlaying == true) return;
+        mStateMachine.ChangeState(new RollState(this, moveValue));
+    }
 
     public void OnCharacterDamage(int damage)
     {
@@ -80,7 +108,7 @@ public abstract class CharaController : MonoBehaviour, IController
         if(isDefending) mStateMachine.ChangeState(new OnDefendHitState(this,damage));
         else mStateMachine.ChangeState(new OnHitState(this,damage));
     }
-    protected void Die()
+    public void Die()
     {
         Debug.Log(this.gameObject.name+"has Died.");
     }

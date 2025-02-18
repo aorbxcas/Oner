@@ -6,11 +6,20 @@ using QFramework;
 
 public abstract class AIBehaviour : IController
 {
-    protected CharaController agent;
+    protected EnemyController agent;
     protected StateMachine stateMachine;
     public AIBehaviour(CharaController agent)
     {
-        this.agent = agent;
+        if (agent is EnemyController)
+        {
+            this.agent = (EnemyController)agent;
+        }
+        else
+        {
+            Debug.Log("敌人行为管理器初始化失败...");
+            return;
+        }
+
         stateMachine = agent.mStateMachine;
     }
     public abstract void Start();

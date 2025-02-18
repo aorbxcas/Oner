@@ -98,45 +98,6 @@ public class PlayerController : CharaController
     {
         RollInput();
     }
-
-    protected override void IdleInput()
-    {
-        mStateMachine.ChangeState(new IdleState(this));
-    }
-    protected override void MoveInput(Vector2 direction)
-    {
-        if (isActionPlaying == true) return;
-        if (Math.Abs(direction.x) < 0.01 && Math.Abs(direction.y) < 0.01)
-        {
-            IdleInput();
-        }
-        else
-        {
-            mStateMachine.ChangeState(new MoveState(this,direction));
-        }
-    }
-    
-    protected override void AttackInput()
-    {
-        if (isActionPlaying == true) return;
-        if (mWeapon != null)
-        {
-            mStateMachine.ChangeState(new AttackState(this));
-        }
-    }
-    
-    protected override void DefendInput()
-    {
-        if (isActionPlaying == true) return;
-        mStateMachine.ChangeState(new DefendState(this));
-    }
-
-    private void RollInput()
-    {
-        if (isActionPlaying == true) return;
-        mStateMachine.ChangeState(new RollState(this,moveValue));
-    }
-
     
     private void LookAtMouse()
     {

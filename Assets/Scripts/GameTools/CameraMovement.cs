@@ -16,11 +16,14 @@ public class CameraMovement : MonoBehaviour
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
-
+        transform.position = player.position + new Vector3(0, 5, -2.5f);
         relCameraPos = transform.position - player.position;
         relCameraPosMag = relCameraPos.magnitude - 0.5f;
     }
-
+    void Start()
+    {
+        
+    }
     void FixedUpdate()
     {
         //初始位置
@@ -30,19 +33,18 @@ public class CameraMovement : MonoBehaviour
         Vector3[] checkPoints = new Vector3[1];
 
         checkPoints[0] = standardPos;
-        //checkPoints[1] = Vector3.Lerp(standardPos, abovePos, 0.25f);
-        //checkPoints[2] = Vector3.Lerp(standardPos, abovePos, 0.5f);
-        //checkPoints[3] = Vector3.Lerp(standardPos, abovePos, 0.75f);
-        //checkPoints[4] = abovePos;
-
-        //for (int i = 0; i < checkPoints.Length; i++)
-        //{
-        //    if (ViewingPosCheck(checkPoints[i]))
-        //        break;
-        //}
         transform.position = Vector3.Lerp(transform.position, standardPos, smooth * Time.deltaTime);
-     //   SmoothLookAt();
-
+        //   SmoothLookAt();
+        //RaycastHit hit;
+        //if (Physics.Linecast(player.position,transform.position,out hit))
+        //{
+        //    if (hit.transform.tag != "player")
+        //    {
+        //        Vector3 currentLocalPosition = transform.localPosition;
+        //        currentLocalPosition.z = hit.point.z;
+        //        transform.localPosition = currentLocalPosition;
+        //    }
+        //}
     }
 
     void SmoothLookAt()
@@ -51,6 +53,15 @@ public class CameraMovement : MonoBehaviour
 
         Quaternion lookAtRotation = Quaternion.LookRotation(relPlayerPosition, Vector3.up);
         transform.rotation = Quaternion.Lerp(transform.rotation, lookAtRotation, smooth * Time.deltaTime);
+    }
+
+    private void ChangeItemTransparency(Collider2D collision, float alpha)
+    {        
+        SpriteRenderer spriteRenderer = collision.GetComponent<SpriteRenderer>();
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.color = new Color(1, 1, 1, alpha);
+        }
     }
 
     //bool ViewingPosCheck(Vector3 checkPos)
