@@ -1,4 +1,5 @@
 using QFramework;
+using System.Collections;
 using UnityEngine;
 public struct ChacterActionParams
 {
@@ -47,6 +48,11 @@ public class CharacterActionCommand : AbstractCommand
             default:
                 break;
         }
+    }
+    IEnumerator PlaySound(string soundName,float delayTime)
+    {
+        AudioKit.PlaySound(soundName);
+        yield return new WaitForSeconds(delayTime);
     }
 
 

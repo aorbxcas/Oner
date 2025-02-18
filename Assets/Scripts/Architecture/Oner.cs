@@ -11,5 +11,7 @@ public class Oner : Architecture<Oner>
         this.RegisterModel(new PlayerDataModel());
 
         this.RegisterSystem(new GameStateSystem());
+
+        this.RegisterSystem(new AudioManagerSystem());
     }
 }

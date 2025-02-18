@@ -119,6 +119,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\FluentAPI\1.CSharp\4.SystemReflectionExtension.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Scripts\Framework\Writer\StringCodeWriter.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\GraphKit\IMGUI\Scripts\Editor\GUIGraphResources.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\8.ScriptableSingletonProperty\ScriptableSingletonPropertyExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\GraphKit\IMGUI\Scripts\GUIGraphNode.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Interop\StandardDescriptors\HardwiredDescriptors\DefaultValue.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Interop\Converters\TableConversions.cs" />
@@ -223,6 +224,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Platforms\DotNetCorePlatformAccessor.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\FluentAPI\0.Unity\2.UnityEngineTransformExtension.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\GraphKit\IMGUI\Scripts\Editor\GUIGraphGUILayout.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\7.PrefabSingletonProperty\PrefabSingletonPropertyExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\DataStructs\MultiDictionary.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\EditorKit\Utilities\UIElementExtensions.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\EventKit\EventTrigger\Physics\OnTriggerEnterEventTrigger.cs" />
@@ -239,6 +241,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Diagnostics\PerformanceCounter.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\Markdown\Layout\MDContext.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Scripts\Components\Bind\IBind.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\3.MonoSingletonProperty\MonoSingletonPropertyExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Errors\InterpreterException.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\ScriptOptions.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Editor\ViewControllerInspector.cs" />
@@ -249,6 +252,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\FluentAPI\1.CSharp\1.SystemStringExtension.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\VM\Processor\Processor.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\Markdown\Layout\IMDLayoutBuilder.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\8.ScriptableSingletonProperty\MyScriptableA.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Diagnostics\PerformanceCounterType.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Tree\Expressions\AdjustmentExpression.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\EditorKit\View\IMGUIGenericMenu.cs" />
@@ -363,6 +367,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PoolKit\Scripts\SafeObjectPool.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Errors\SyntaxErrorException.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PoolKit\Scripts\Factory\CustomObjectFactory.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\7.PrefabSingletonProperty\MyPrefabA.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ActionKit\Scripts\DeprecateActionKit.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\PackageManager\Command\SearchCommand.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\Login\View\RegisterView.cs" />
@@ -451,6 +456,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\InstructionFieldUsage.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\CoreLib\Bit32Module.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\Scopes\BuildTimeScope.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\2.SingletonProperty\SingletonPropertyExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\DataStructs\LinkedListIndex.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Scripts\Components\Bind\AbstractBind.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\Markdown\Renderer\MDRendererInlineAutoLink.cs" />
@@ -471,6 +477,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\GraphKit\IMGUI\Scripts\GUIGraphNodePort.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\VM\Processor\Processor_Scope.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Editor\AbstractBindInspector.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\4.MonoSingletonPath\MonoSingletonPathExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\CoreLib\JsonModule.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Scripts\MonoSingleton.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Interop\StandardDescriptors\AutoDescribingUserDataDescriptor.cs" />
@@ -581,9 +588,11 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\Scopes\BuildTimeScopeBlock.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\LocaleKit\Scripts\LocaleKitConfigView.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\FluentAPI\0.Unity\4.UnityEngineCameraExtension.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\1.MonoSingleton\MonoSingletonExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\VM\Processor\Processor_Debugger.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\VM\ByteCode.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Execution\VM\ExecutionState.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\6.ReplaceableMonoSingleton\ReplaceableMonoSingletonExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Interop\Attributes\MoonSharpPropertyAttribute.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Compatibility\Attributes.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Compatibility\Frameworks\Base\FrameworkBase.cs" />
@@ -618,6 +627,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\PackageKit\EditorKit\View\IMGUIRectBoxView.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Tree\Expressions\UnaryOperatorExpression.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\FluentAPI\0.Unity\1.UnityEngineGameObjectExtension.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\5.PersistentMonoSingleton\PersistentMonoSingletonExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\DataStructs\Extension_Methods.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Editor\ViewControllerTemplate.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Modules\MoonSharpModuleAttribute.cs" />
@@ -683,6 +693,7 @@
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Editor\CodeGenTask.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ActionKit\Example\7.Custom\CustomExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Interop\BasicDescriptors\ParameterDescriptor.cs" />
+    <Compile Include="Assets\QFramework\Toolkits\_CoreKit\SingletonKit\Example\0.Singleton\SingletonExample.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ActionKit\Scripts\Internal\Action\Sequence.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\CodeGenKit\Scripts\Framework\Writer\FileCodeWriter.cs" />
     <Compile Include="Assets\QFramework\Toolkits\_CoreKit\ScriptKit\MoonSharp\Interpreter\Serialization\ObjectValueConverter.cs" />

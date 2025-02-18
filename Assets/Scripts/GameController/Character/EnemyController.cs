@@ -1,0 +1,38 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class EnemyController : CharaController
+{
+
+    public GameObject target;
+    protected override void IdleInput()
+    {
+        
+    }
+    protected override void AttackInput()
+    {
+        
+    }
+
+    protected override void MoveInput(Vector2 direction)
+    {
+
+    }
+    protected override void DefendInput()
+    {
+        
+    }
+
+    // Start is called before the first frame update
+    protected override void Start()
+    {
+        base.Start();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+}

@@ -28,6 +28,7 @@ public class CharacterAnimationCommand : AbstractCommand
                 break;
             case CharacterAnimationType.Attack:
                 character.PlayAnimation("Attack");
+                BMusicManager.Instance.PlaySFX("WaveSword1",0.1f);
                 break;
             case CharacterAnimationType.OnDamage:
                 character.PlayAnimation("OnDamage");
