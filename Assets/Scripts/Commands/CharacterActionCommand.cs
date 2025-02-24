@@ -33,10 +33,6 @@ public class CharacterActionCommand : AbstractCommand
                 character.mWeapon.GetComponent<WeaponController>().Attack();
                 this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.Attack));
                 break;
-            case CharacterActionType.OnDamage:
-                character.GetComponent<CharaController>().OnCharacterDamage(param.damage);
-                // this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.OnDamage));
-                break;
             case CharacterActionType.Defend:
                 character.GetComponent<CharaController>().SetDefendBool(true);
                 this.SendCommand(new CharacterAnimationCommand(character, CharacterAnimationType.Defend));
@@ -49,11 +45,5 @@ public class CharacterActionCommand : AbstractCommand
                 break;
         }
     }
-    IEnumerator PlaySound(string soundName,float delayTime)
-    {
-        AudioKit.PlaySound(soundName);
-        yield return new WaitForSeconds(delayTime);
-    }
-
 
 }

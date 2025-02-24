@@ -26,7 +26,7 @@ public enum CharacterAnimationType
     Roll
 }
 
-public abstract class CharaController : MonoBehaviour, IController
+public abstract class CharaController : MonoBehaviour, IController,ICanOnDamage
 {
     public CharacterInfo mCharacterInfo;
     public WeaponController mWeapon;
@@ -99,7 +99,7 @@ public abstract class CharaController : MonoBehaviour, IController
         mStateMachine.ChangeState(new RollState(this, moveValue));
     }
 
-    public void OnCharacterDamage(int damage)
+    public void OnDamage(int damage)
     {
         if (isRolling) {
             Debug.Log("…¡±‹≥…π¶");

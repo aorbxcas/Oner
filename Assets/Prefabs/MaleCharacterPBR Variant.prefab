@@ -62,9 +62,6 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5951347427928927931}
-    - targetCorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 8670214438167801571}
     - targetCorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
       insertIndex: -1
@@ -96,6 +93,7 @@ MonoBehaviour:
   weaponName: sward
   damage: 5
   owner: {fileID: 0}
+  attackInterval: 0
   distance: 10
   selectorType: 1
   selectorTags:
@@ -119,27 +117,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8189980434977739222, guid: 2dfbb63c9cdf7504faf4ff26b0581598, type: 3}
   m_PrefabInstance: {fileID: 2349357236250340010}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &5951347427928927931
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5850791802672429948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 463663d1c9c51ac4b801aa97da9be636, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  HP: 100
-  MaxHP: 100
-  SP: 100
-  MaxSP: 100
-  damage: 100
-  attackSpeed: 5
-  moveSpeed: 5
-  currentAnimation: Idle
-  HitFxPos: {fileID: 0}
 --- !u!143 &8670214438167801571
 CharacterController:
   m_ObjectHideFlags: 0
@@ -181,6 +158,9 @@ MonoBehaviour:
   mCharacterInfo: {fileID: 0}
   mWeapon: {fileID: 6890111597646624601}
   mAnimator: {fileID: 0}
+  isActionPlaying: 0
+  isDefending: 0
+  isRolling: 0
   moveAction:
     m_Name: Move
     m_Type: 0
@@ -255,3 +235,32 @@ MonoBehaviour:
       m_Action: Attack
       m_Flags: 0
     m_Flags: 0
+  TestAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 7ecba2f0-948f-48ee-b07b-3a46ec005542
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  DefendAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: f520174b-9bb7-4277-abfe-0e03e1c57300
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  RollAction:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 13c01bc5-c404-494e-a3a6-fe7026610127
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  debugText: {fileID: 0}
+  testWeapon: {fileID: 0}

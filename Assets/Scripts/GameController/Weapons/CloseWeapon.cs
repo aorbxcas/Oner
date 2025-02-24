@@ -1,5 +1,6 @@
 using ARPGSimpleDemo.Skill;
 using QFramework;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -33,7 +34,12 @@ public class CloseWeapon : WeaponController
         if (enemyArray == null) return;
         foreach(var enemy in enemyArray)
         {
-            this.SendCommand(new CharacterActionCommand(enemy.GetComponent<CharaController>(), new ChacterActionParams { ActionType = CharacterActionType.OnDamage, damage = weaponInfo.damage }));
+            if (enemy.GetComponent<ICanOnDamage>() != null)
+            {
+                enemy.GetComponent<ICanOnDamage>().OnDamage(weaponInfo.damage);
+                //  this.SendCommand(new CharacterActionCommand(enemy.GetComponent<CharaController>(), new ChacterActionParams { ActionType = CharacterActionType.OnDamage, damage = weaponInfo.damage }));
+
+            }
         }
 
     }

@@ -61,4 +61,8 @@ public class BMusicManager : MonoSingleton<BMusicManager>
         yield return new WaitForSeconds(delayTime);
         sfxSource.PlayOneShot(clip);
     }
+    public bool getBGMIsPlaying()
+    {
+        return bgmSource.isPlaying;
+    }
 }

@@ -61,8 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\GameController\Character\EnemyController.cs" />
+    <Compile Include="Assets\Scripts\UI\Loading\UILoading.cs" />
     <Compile Include="Assets\Scripts\GameData\Character\PlayerInfo.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\CharaController.cs" />
+    <Compile Include="Assets\Scripts\UI\Ohters\BeginScene.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\PlayerController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
@@ -73,13 +75,17 @@
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\AIBehaviourMachine.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\Game\GameMainMineCell.Designer.cs" />
+    <Compile Include="Assets\Scripts\Tools\GameMain.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\AIBehaviour\AlertBehaviour.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
+    <Compile Include="Assets\Scripts\Tools\ConfigReader.cs" />
     <Compile Include="Assets\Scripts\GameController\Managers\BMusicManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\Main.cs" />
+    <Compile Include="Assets\Scripts\UI\UISceneWidget.cs" />
     <Compile Include="Assets\Scripts\GameData\Character\CharacterInfo.cs" />
+    <Compile Include="Assets\Scripts\Tools\Configuration.cs" />
     <Compile Include="Assets\Scripts\Events\AnimationEvent\PlayerStateBehavior.cs" />
     <Compile Include="Assets\Scripts\Commands\CharacterAnimationCommand.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
@@ -88,12 +94,14 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\AIBehaviour\AIBehaviour.cs" />
+    <Compile Include="Assets\Scripts\System\Global.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\Game\GameMainMineCell.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\GameEvent.cs" />
     <Compile Include="Assets\Scripts\GameController\Managers\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Tools\GameObjectPool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\SectorAttackSelector.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\AIBehaviour\ChaseBehaviour.cs" />
@@ -105,20 +113,28 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\Scripts\System\GameStateSystem.cs" />
+    <Compile Include="Assets\Scripts\Commands\AIBehaviourCommand.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\CharacterState\MoveState.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
+    <Compile Include="Assets\Scripts\GameController\Interface\ICanOnDamage.cs" />
+    <Compile Include="Assets\Scripts\UI\MainScene\RoleModelSceneUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
     <Compile Include="Assets\Scripts\GameData\WeaponInfo.cs" />
     <Compile Include="Assets\Scripts\GameTools\TransformHelper.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\CharacterState\OnDefendHitState.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\StateMachine.cs" />
+    <Compile Include="Assets\Scripts\UI\MainScene\RoleInfoSceneUI.cs" />
     <Compile Include="Assets\DoubleL\Demo\DemoCameraController.cs" />
+    <Compile Include="Assets\Scripts\System\GameConfig.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshSpawner.cs" />
+    <Compile Include="Assets\Scripts\UI\MainScene\MainSceneUI.cs" />
     <Compile Include="Assets\Scripts\UI\Player\PlayerUIManager.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameMainUIPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\GameTools\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWidgets\ScrollViewWidget.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWidgets\ButtonWidget.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\GameController\Weapons\base\WeaponController.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameEndUIPanel.Designer.cs" />
@@ -126,6 +142,7 @@
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\CharacterState\OnHitState.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameMainUIPanel.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\CharacterState\DeathState.cs" />
+    <Compile Include="Assets\Scripts\UI\UIScene.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\base\IAttackSelector.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\GameTools\CollectionHelper.cs" />
@@ -136,7 +153,9 @@
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameStartUIPanel.Designer.cs" />
     <Compile Include="Assets\Scripts\Models\PlayerDataModel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWidgets\ToggleWidget.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\UI\UIManager.cs" />
     <Compile Include="Assets\Scripts\Tools\InfoTools.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\System\AudioManagerSystem.cs" />
@@ -153,12 +172,14 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\Fantasy Forest Environment Free Sample\StandardNoCulling.shader" />
     <None Include="Assets\shaders\TestShader.shader" />
+    <None Include="Assets\StreamingAssets\config.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\RPG Tiny Fantasy Forest PBR\Shader\Water_River.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Anton OFL.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\Resources\Fonts\Chinese.txt" />
     <None Include="Assets\RPG Tiny Fantasy Forest PBR\Shader\Portal.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
@@ -182,6 +203,7 @@
     <None Include="Assets\RPG Tiny Fantasy Forest PBR\Shader\Water_Fall.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Examples &amp; Extras\Fonts\Bangers - OFL.txt" />
+    <None Include="Assets\StreamingAssets\BaseAI.txt" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1020,6 +1042,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.EditorCoroutines.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1044,16 +1070,20 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Core.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow">
@@ -1096,6 +1126,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Updater">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Updater.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.Editor.dll</HintPath>
       <Private>False</Private>
@@ -1108,8 +1142,16 @@
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AI.Navigation.Editor.ConversionSystem">
+      <HintPath>Library\ScriptAssemblies\Unity.AI.Navigation.Editor.ConversionSystem.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">

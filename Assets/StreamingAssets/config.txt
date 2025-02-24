@@ -1,0 +1,65 @@
+﻿
+[Login]
+Account = 账号都不输入，我怎么给你保存数据呀，你丫这智商，基本不适合这款游戏，直接关闭吧~
+Password = 没密码，资源共享吗？你丫是不是傻，是不是傻，是不是傻~，建议关闭游戏，别自虐啦~
+Success = 账号注册成功，赶紧登陆游戏爽去吧~
+Faild = 账号创建失败，赶快重新创建去吧，一会服务器满了，你就不能和其他小伙伴愉快玩耍啦~
+Successful = 登陆成功
+LoginFaild = 账号或密码错误，请重新输入！！！
+Name = 游戏名都不输入，别人怎么称呼你呢？
+
+[GameVersion]
+Version = 1
+
+
+[Job]
+Job1 = 战士
+Job2 = 法师
+Description1 = "    具有强大的近战攻击力，一直活跃在战斗的最前方。强大的力量和充沛的体力让他可以摧毁敌人的一切防御。（推荐新手使用）
+Description2 = "    将所有的精力都用在魔法奥义上，每当他向空中举手的时候，不可预测的灾难即将到来。由于自身体力较弱，法师靠法术远距离攻打敌人。
+Weapon1 = 砍刀
+Weapon2 = 法杖
+
+[Money]
+Gold = 100
+Diamond = 0
+
+[Scene]
+LoadFailed = 场景加载失败，重新加载~
+LoadGameStart = MainFrame
+LoadStandAlone = StandAlone
+LoadCreatRole = CreatRole
+LoadUIMainCity = UIMainCity
+LoadMainCity = MainCity
+LoadUIBattle = UIBattle
+LoadBattle = 11
+LoadLogin = Login
+
+[StandAlone]
+Cover = 已经存在游戏存档，是否要删除现有存档！
+Archive = 没有游戏存档！
+
+[Battle]
+Message1 = 是否退出战斗
+Message2 = 中途退出战斗会造成关卡奖励损失
+
+
+[UIRole]
+Label1 = Label_name
+Label2 = Label_lv
+Label3 = Label_HP
+Label4 = Label_MP
+Label5 = Label_exp
+Label6 = Label_power
+Label7 = Label_intelligence
+Label8 = Label_speed
+Label9 = Label_damage_max
+LabelCount = 9
+
+[Backpack]
+Backpackfull = 背包已满，请先清理背包！
+GoldShortage = 金币不足，请充值！
+TakeOff = 请先脱下装备，然后再出售装备！
+
+
+

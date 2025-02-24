@@ -14,7 +14,7 @@ public class ChaseBehaviour : AIBehaviour
 
     public override void Update()
     {
-        agent.MoveToTarget(agent.target);
+        agent.NavMove(agent.target);
     }
     public override void End()
     {

@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Reflection;
 
 public class CameraMovement : MonoBehaviour
 {
@@ -13,16 +14,20 @@ public class CameraMovement : MonoBehaviour
     private float relCameraPosMag;
     private Vector3 newPos;
 
+    public float maxMouseOffsetDistance = 1;
+
     void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+
         transform.position = player.position + new Vector3(0, 5, -2.5f);
+        //transform.localPosition = transform.localPosition + new Vector3(0, 0, -2);
         relCameraPos = transform.position - player.position;
         relCameraPosMag = relCameraPos.magnitude - 0.5f;
     }
     void Start()
     {
-        
+       
     }
     void FixedUpdate()
     {
@@ -34,22 +39,26 @@ public class CameraMovement : MonoBehaviour
 
         checkPoints[0] = standardPos;
         transform.position = Vector3.Lerp(transform.position, standardPos, smooth * Time.deltaTime);
-        //   SmoothLookAt();
-        //RaycastHit hit;
-        //if (Physics.Linecast(player.position,transform.position,out hit))
-        //{
-        //    if (hit.transform.tag != "player")
-        //    {
-        //        Vector3 currentLocalPosition = transform.localPosition;
-        //        currentLocalPosition.z = hit.point.z;
-        //        transform.localPosition = currentLocalPosition;
-        //    }
-        //}
+        SmoothLookAt();
+
     }
 
     void SmoothLookAt()
     {
-        Vector3 relPlayerPosition = player.position - transform.position;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        Plane groundPlane = new Plane(Vector3.up, Vector3.zero);
+        Vector3 offsetDirection = new Vector3();
+        if (groundPlane.Raycast(ray,out float position))
+        {
+            Vector3 mouseWorldPosition = ray.GetPoint(position);
+            offsetDirection = mouseWorldPosition - transform.position;
+            offsetDirection.y = 0;
+            if (offsetDirection.magnitude > maxMouseOffsetDistance)
+            {
+                offsetDirection = offsetDirection.normalized * maxMouseOffsetDistance;
+            }
+        }
+        Vector3 relPlayerPosition = player.position - transform.position + offsetDirection;
 
         Quaternion lookAtRotation = Quaternion.LookRotation(relPlayerPosition, Vector3.up);
         transform.rotation = Quaternion.Lerp(transform.rotation, lookAtRotation, smooth * Time.deltaTime);

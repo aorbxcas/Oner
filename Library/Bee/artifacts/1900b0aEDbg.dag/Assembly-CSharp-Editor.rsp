@@ -353,6 +353,11 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/SupportOldQF.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UIKit.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UIKit.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.2D.Sprite.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.AI.Navigation.Editor.ConversionSystem.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.AI.Navigation.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.AI.Navigation.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.AI.Navigation.Updater.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ForUI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ref.dll"
@@ -382,7 +387,6 @@
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/UnityEngine.UI.ref.dll"
 -analyzer:"D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"D:/DevDownload/Unity/2022.3.15f1c1/2022.3.43f1c1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/AnimeNaturalEnvironment/Scripts/Editor/RendeTextureEditor.cs"
 "Assets/QFramework/Toolkits/SupportOldQF/UIKitCreateService/Editor/UIKitCreateServiceView.cs"
 -langversion:9.0
 /deterministic
