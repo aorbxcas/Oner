@@ -104,6 +104,7 @@
     <Compile Include="Assets\Scripts\Tools\GameObjectPool.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\GameTools\Selector\SectorAttackSelector.cs" />
+    <Compile Include="Assets\shaders\Scripts\ShaderScript.cs" />
     <Compile Include="Assets\Scripts\GameController\Character\StateTools\AIBehaviour\ChaseBehaviour.cs" />
     <Compile Include="Assets\Scripts\Architecture\Oner.cs" />
     <Compile Include="Assets\QFramework\Toolkits.Demo.SaoLei\Scripts\UI\GameEndUIPanel.cs" />
@@ -184,6 +185,9 @@
     <None Include="Assets\Resources\Fonts\Chinese.txt" />
     <None Include="Assets\RPG Tiny Fantasy Forest PBR\Shader\Portal.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\shaders\newShader.shader" />
+    <None Include="Assets\shaders\LODShader.shader" />
+    <None Include="Assets\shaders\GrabShader.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\RPG Tiny Fantasy Forest PBR\Manual\ForMakingitLookGood.txt" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
