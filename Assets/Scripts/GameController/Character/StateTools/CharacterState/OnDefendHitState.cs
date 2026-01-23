@@ -32,6 +32,7 @@ public class OnDefendHitState : State
 
     public override void Exit()
     {
-
+        // 防御受击完成，重置标志
+        characterController.isActionPlaying = false;
     }
 }

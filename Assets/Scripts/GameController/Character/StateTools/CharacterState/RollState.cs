@@ -23,15 +23,33 @@ public class RollState : State
     public override void Enter()
     {
         characterController.isActionPlaying = true;
+        
+        // 立即朝向翻滚方向
+        if (moveDirection.magnitude > 0.01f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection.normalized, Vector3.up);
+            characterController.transform.rotation = targetRotation;
+        }
+        
         this.SendCommand(new CharacterActionCommand(characterController, new ChacterActionParams { ActionType = CharacterActionType.Roll }));
         
     }
     public override void Execute()
     {
+        // 持续朝向翻滚方向，确保翻滚过程中保持朝向
+        if (moveDirection.magnitude > 0.01f)
+        {
+            Quaternion targetRotation = Quaternion.LookRotation(moveDirection.normalized, Vector3.up);
+            float rotationSpeed = characterController.mCharacterInfo != null ? characterController.mCharacterInfo.rotationSpeed : 8.0f;
+            characterController.transform.rotation = Quaternion.Slerp(characterController.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
+        }
+        
         characterController.GetComponent<CharacterController>().Move(moveDirection * characterController.mCharacterInfo.moveSpeed * Time.deltaTime);
     }
     public override void Exit()
     {
         characterController.SetRollBool(false);
+        // 翻滚完成，重置标志
+        characterController.isActionPlaying = false;
     }
 }

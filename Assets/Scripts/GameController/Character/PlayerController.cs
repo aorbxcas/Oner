@@ -16,7 +16,7 @@ public class PlayerController : CharaController
     public InputAction RollAction;
 
 
-    public TextMeshProUGUI debugText; // µ÷ÊÔÓÃText£¬ÏÔÊ¾×´Ì¬»úĞÅÏ¢
+    public TextMeshProUGUI debugText; // è°ƒè¯•ç”¨Textï¼Œæ˜¾ç¤ºçŠ¶æ€æœºä¿¡æ¯
     public GameObject testWeapon;
 
 
@@ -59,7 +59,7 @@ public class PlayerController : CharaController
     }
     void Update()
     {
-        if (debugText != null&&mStateMachine.currentState != null)//  ÏÔÊ¾×´Ì¬»úĞÅÏ¢
+        if (debugText != null&&mStateMachine.currentState != null)//  æ˜¾ç¤ºçŠ¶æ€æœºä¿¡æ¯
         {
             debugText.text = mStateMachine.currentState.GetType().ToString();
         }
@@ -81,7 +81,7 @@ public class PlayerController : CharaController
     }
     private void OnTestPerformed(InputAction.CallbackContext context)
     {
-        //  ²âÊÔÓÃ
+        //  æµ‹è¯•ç”¨
         //this.SendCommand(new CharacterActionCommand(this, new ChacterActionParams { ActionType = CharacterActionType.OnDamage, damage = 10 }));
         testWeapon.GetComponent<WeaponController>().Attack();
     }
@@ -101,7 +101,7 @@ public class PlayerController : CharaController
 
     private void LookAtMouse()
     {
-        // ÓÃÆÁÄ»×ø±êÏµ¼ÆËã½ÇÉ«ÃæÏò
+        // ç”¨å±å¹•åæ ‡ç³»è®¡ç®—è§’è‰²é¢å‘
         if (isActionPlaying == true) return;
         Vector3 direction3D = (Input.mousePosition - Camera.main.WorldToScreenPoint(transform.position)).normalized;
         Vector2 direction2D = new Vector2(direction3D.x, direction3D.y);

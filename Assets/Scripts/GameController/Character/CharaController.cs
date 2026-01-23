@@ -102,7 +102,7 @@ public abstract class CharaController : MonoBehaviour, IController,ICanOnDamage
     public void OnDamage(int damage)
     {
         if (isRolling) {
-            Debug.Log("ÉÁ±Ü³É¹¦");
+            Debug.Log("é—ªé¿æˆåŠŸ");
             return;
         }
         if(isDefending) mStateMachine.ChangeState(new OnDefendHitState(this,damage));

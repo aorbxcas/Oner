@@ -34,6 +34,7 @@ public class OnHitState : State
 
     public override void Exit()
     {
-        
+        // 受击完成，重置标志
+        characterController.isActionPlaying = false;
     }
 }
