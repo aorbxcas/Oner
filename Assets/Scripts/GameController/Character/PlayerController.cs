@@ -18,6 +18,7 @@ public class PlayerController : CharaController
 
     public TextMeshProUGUI debugText; // 调试用Text，显示状态机信息
     public GameObject testWeapon;
+    public WeaponManager weaponManager; // 武器管理器
 
 
     private void OnEnable()
@@ -56,6 +57,18 @@ public class PlayerController : CharaController
     protected override void Start()
     {
         base.Start();
+        
+        // 如果没有指定WeaponManager，尝试获取
+        if (weaponManager == null)
+        {
+            weaponManager = GetComponent<WeaponManager>();
+        }
+        
+        // 如果找到了WeaponManager，更新当前武器引用
+        if (weaponManager != null && weaponManager.GetCurrentWeapon() != null)
+        {
+            mWeapon = weaponManager.GetCurrentWeapon();
+        }
     }
     void Update()
     {

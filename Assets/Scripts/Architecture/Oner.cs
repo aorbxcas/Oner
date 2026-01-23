@@ -9,6 +9,7 @@ public class Oner : Architecture<Oner>
     protected override void Init()
     {
         this.RegisterModel(new PlayerDataModel());
+        this.RegisterModel(new InventoryModel());
 
         this.RegisterSystem(new GameStateSystem());
 

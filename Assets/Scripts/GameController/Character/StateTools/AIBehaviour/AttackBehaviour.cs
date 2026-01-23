@@ -8,7 +8,8 @@ using UnityEngine;
 public class AttackBehaviour : AIBehaviour
 {
     private EnemyInfo info;
-
+    private float attackTimer = 1.5f;
+    
     public AttackBehaviour(CharaController agent) : base(agent)
     {
         info = (EnemyInfo)agent.mCharacterInfo;
@@ -16,6 +17,7 @@ public class AttackBehaviour : AIBehaviour
     
     public override void Start()
     {
+        attackTimer = 0.5f;
         // 停止移动，准备攻击
         agent.IdleInput();
     }
@@ -49,12 +51,18 @@ public class AttackBehaviour : AIBehaviour
         agent.LookAtPos(agent.target.transform.position);
         
         // 攻击冷却计时
-        // 执行攻击
-        agent.AttackInput();
+        attackTimer += Time.deltaTime;
+        if (attackTimer >= info.attackCooldown)
+        {
+            // 执行攻击
+            agent.AttackInput();
+            attackTimer = 0f;
+        }
     }
     
     public override void End()
     {
+        attackTimer = 0f;
     }
 }
 
